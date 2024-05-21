@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:todolistapp/screens/mainscreen/addtaskscreen/pages/add_task_page.dart';
+import 'package:todolistapp/screens/mainscreen/addcategoryscreen/pages/add_category_page.dart';
 
-class PersonalHomeBottomSheet extends StatelessWidget {
-  const PersonalHomeBottomSheet({Key? key});
+class CategoryBottomSheet extends StatelessWidget {
+  const CategoryBottomSheet({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,7 +23,7 @@ class PersonalHomeBottomSheet extends StatelessWidget {
             onTap: (){
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => AddTaskPage(),
+                  builder: (context) => AddCategoryPage(),
                 ),
               );
             },
@@ -35,7 +36,7 @@ class PersonalHomeBottomSheet extends StatelessWidget {
                 ),
               SizedBox(width: 20,),
                 Text(
-                  "add task",
+                  "add category",
                   style: TextStyle(
                    color: Colors.black,
                    fontSize: 20,
@@ -44,6 +45,7 @@ class PersonalHomeBottomSheet extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: 20,),
         ]),
       )
     );

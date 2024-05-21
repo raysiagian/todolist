@@ -23,23 +23,23 @@ class HomePage extends StatelessWidget {
               Tab(
                 child: Text(
                   'Personal',
-                  style: TextStyle(fontSize: 16), // Ubah ukuran teks sesuai kebutuhan
+                  style: TextStyle(fontSize: 16),
                 ),
               ),
               Tab(
                 child: Text(
                   'Group',
-                  style: TextStyle(fontSize: 16), // Ubah ukuran teks sesuai kebutuhan
+                  style: TextStyle(fontSize: 16),
                 ),
               )
             ],
           ), actions: [
           IconButton(
             icon: CircleAvatar(
-              backgroundImage: AssetImage('assets/images/profile.png'), // Ganti dengan gambar Anda
+              backgroundImage: AssetImage('assets/images/profile.png'),
             ),
             onPressed: () {
-              // Aksi yang ingin dilakukan saat tombol ditekan
+              
             },
             ),
           ],

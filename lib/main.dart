@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todolistapp/screens/mainscreen/homescreen/pages/home_page.dart';
+import 'package:todolistapp/screens/splashscreen/pages/splash_screen_page.dart';
 void main() {
   runApp(MyApp());
 }
@@ -13,8 +13,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        useMaterial3: false,
       ),
-      home: HomePage(), // Mengganti halaman pertama dengan halaman HomeScreen
+      home: SplashScreenPage(), // Mengganti halaman pertama dengan halaman HomeScreen
     );
   }
 }

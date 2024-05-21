@@ -20,15 +20,18 @@ class _AddGroupPageState extends State<AddGroupPage> {
         backgroundColor: primaryColor,
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back,
+          icon: Icon(Icons.arrow_back_ios,
           color: Colors.white,),
 
-          onPressed: () {
-            Navigator.pushAndRemoveUntil(
-              context,
-              MaterialPageRoute(builder: (context) => HomePage()),
-              (route) => false,
-            );
+          // onPressed: () {
+          //   Navigator.pushAndRemoveUntil(
+          //     context,
+          //     MaterialPageRoute(builder: (context) => HomePage()),
+          //     (route) => false,
+          //   );
+          // },
+           onPressed: () {
+            Navigator.pop(context);
           },
         ),
       ),

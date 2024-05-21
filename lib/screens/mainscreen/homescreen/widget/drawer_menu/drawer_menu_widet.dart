@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todolistapp/core/color/color.dart';
+import 'package:todolistapp/screens/mainscreen/categoryscreen/pages/category_page.dart';
 
 class HomeDrawer extends StatelessWidget {
   @override
@@ -37,7 +38,11 @@ class HomeDrawer extends StatelessWidget {
               ],
             ),
             onTap: () {
-              // Action untuk item 1
+              Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(builder: (context) => CategoryPage()),
+              (route) => false,
+            );
             },
           ),
           ListTile(

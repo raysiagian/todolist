@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:todolistapp/core/color/color.dart';
-import 'package:todolistapp/screens/mainscreen/homescreen/widget/groupscreen/pages/group_home_page.dart';
+import 'package:todolistapp/screens/mainscreen/categoryscreen/pages/category_page.dart';
 
-class AddTaskGroupPage extends StatefulWidget {
-  const AddTaskGroupPage({super.key});
+class AddCategoryPage extends StatefulWidget {
+  const AddCategoryPage({super.key});
 
   @override
-  State<AddTaskGroupPage> createState() => _AddTaskGroupPageState();
+  State<AddCategoryPage> createState() => _AddCategoryPageState();
 }
 
-class _AddTaskGroupPageState extends State<AddTaskGroupPage> {
+class _AddCategoryPageState extends State<AddCategoryPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Add Task Group",
+          "Add Category",
         ),
         backgroundColor: primaryColor,
         automaticallyImplyLeading: false,
@@ -26,11 +26,11 @@ class _AddTaskGroupPageState extends State<AddTaskGroupPage> {
           // onPressed: () {
           //   Navigator.pushAndRemoveUntil(
           //     context,
-          //     MaterialPageRoute(builder: (context) => GroupHomePage()),
+          //     MaterialPageRoute(builder: (context) => CategoryPage()),
           //     (route) => false,
           //   );
           // },
-          onPressed: () {
+           onPressed: () {
             Navigator.pop(context);
           },
         ),

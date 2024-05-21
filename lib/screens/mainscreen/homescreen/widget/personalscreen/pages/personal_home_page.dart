@@ -18,6 +18,12 @@ class _PersonalHomePageState extends State<PersonalHomePage> {
         onPressed: () {
           showModalBottomSheet(
             context: context, 
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20.0),
+                topRight: Radius.circular(20.0),
+              ),
+            ),
             builder: (BuildContext context) {
               return PersonalHomeBottomSheet();
             }

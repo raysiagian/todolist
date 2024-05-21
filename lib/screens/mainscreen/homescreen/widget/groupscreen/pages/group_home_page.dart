@@ -17,7 +17,13 @@ class _GroupHomePageState extends State<GroupHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
-            context: context, 
+            context: context,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20.0),
+                topRight: Radius.circular(20.0),
+              ),
+            ), 
             builder: (BuildContext context) {
               return GroupHomeBottomSheet();
             }
